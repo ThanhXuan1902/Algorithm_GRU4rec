@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PRODUCT RECOMMENDATION</title>
+	<style>
+		body {
+			background-image: url('background.jpg');
+			background-size: cover;
+			font-family: 'Roboto', sans-serif;
+			color: #333;
+		}
+
+		.container {
+			margin: 50px auto;
+			max-width: 600px;
+			padding: 20px;
+			background-color: #fff;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0,0,0,0.3);
+		}
+
+		label {
+			display: block;
+			margin-bottom: 10px;
+			font-weight: 500;
+			color: #333;
+		}
+
+		input[type="text"] {
+			display: block;
+			width: 100%;
+			padding: 10px;
+			border-radius: 5px;
+			border: 1px solid #ccc;
+			margin-bottom: 20px;
+			box-sizing: border-box;
+			font-size: 16px;
+			font-weight: 300;
+			color: #333;
+		}
+
+		input[type="submit"] {
+			background-color: #4CAF50;
+			color: #fff;
+			padding: 10px 20px;
+			border-radius: 5px;
+			border: none;
+			cursor: pointer;
+			font-size: 16px;
+			font-weight: 600;
+			text-transform: uppercase;
+			transition: all 0.3s ease;
+		}
+
+		input[type="submit"]:hover {
+			background-color: #3E8E41;
+		}
+
+		table {
+			border-collapse: collapse;
+			width: 100%;
+			margin-bottom: 20px;
+		}
+
+		th, td {
+			padding: 8px;
+			text-align: left;
+			border-bottom: 1px solid #ddd;
+		}
+
+		th {
+			background-color: #4CAF50;
+			color: #fff;
+			font-weight: 600;
+			text-transform: uppercase;
+		}
+	</style>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,600&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="container">
+		<h1>PRODUCT RECOMMENDATION</h1>
+		<form action="/predict" method="post">
+			<label for="user_id">User ID:</label>
+			<input type="text" id="user_id" name="user_id" required>
+			<label for="viewed_items">Viewed Items:</label>
+			<input type="text" id="viewed_items" name="viewed_items" required>
+			<input type="submit" value="Submit">
+		</form>
+	</div>
+</body>
+</html>
