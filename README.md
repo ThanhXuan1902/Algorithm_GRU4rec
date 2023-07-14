@@ -24,3 +24,4 @@
 - Nghiên cứu đã đưa ra các hướng cải tiến GRU4Rec
 - Ứng dụng tốt nhất vào bài làm
 # Kết quả: 
+https://github.com/ThanhXuan1902/Algorithm_GRU4rec/tree/main/Img_Result
